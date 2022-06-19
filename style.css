@@ -1,66 +1,136 @@
 body{
+    font-family: roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: space-between;
+    min-width: 100vh;
     min-height: 100vh;
-    align-items: center;
-    background-color: #95afba;
+    background-color: #2C3621;
     color: #fafafa;
     flex:auto;
     margin: 0;
 }
 
 body .header{
-    font-size: 36px;
     display: flex;
     flex-direction: row;
     height: 50px;
     padding: 10px;
     text-align: center;
     margin-top: 0;
-    background-color:#3f7cac;
+    background-color:#522A27;
     justify-content: space-between;
 }
 
+a{
+    color:#e2f89c ;
+    margin: 8px;
+    text-decoration: none;
+    font-size: 18px;
+}
+a:hover{
+    font-weight: 600;
+}
+
+.Title{
+    font-size: 36px;
+    font-weight: 800;
+    align-self: auto;
+    margin-left: 40px;
+}
+.HeaderLink{
+    align-self: center;
+}
 .User, .CPU{
     padding: 30px;
 }
 
 .GameDisplay{
     display: flex;
-    font-size: 30px;
+    justify-content: space-around;
 }
 
-.pointCounter{
-    margin-top: 20px;
+.titlePoint{
+    font-size: 36px;
+    font-weight: 600;
 }
-.display{
+
+#pointCounterYou, #pointCounterCPU{
+    align-self: center;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+    font-weight: 900;
+    color:#E3D081 ;
+}
+
+#result{
+    font-size: 50px;
+    font-weight: 600;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .choiceUser{
     display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.oppMove{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-size: 20px;
 }
 
 #displayCPUChoice{
-    font-size: 30px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button{
-    width: auto;
+    width: 180px;
     height: 80px;
     padding: 10px 20px;
-    background-color: #fafafa;
-    color: rgb(34, 140, 182);
+    color: #2C3621;
+    background-color:#e2f89c;
     margin: 0 30px;
     font-size: 40px;
     border-radius: 13px;
+    border: 0.5px solid #6e3628;
 }
 
 button:hover{
-    background-color: rgb(34, 140, 182);
-    color: #fafafa;
+    background-color: #2C3621;
+    color: #e2f89c;
+}
+
+#reset{
+    font-size: 14px;
+    width: 100px;
+    height: 60px;
+    margin-right: 60px;
+    background-color: #522A27;
+    color: #ffffff;
+    margin-left: auto;
+}
+
+#reset:hover{
+    color: #e2f89c;
+    background-color: #2C3621;
+}
+
+.footer{
+    display: flex;
+    background-color:#522A27;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 15px;
+    padding:2px
 }

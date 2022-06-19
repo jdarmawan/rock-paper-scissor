@@ -12,6 +12,11 @@
     <script src="script.js"></script>
     <div class="header"> 
         <div class="Title"> Rock-Paper-Scissor </div> 
+        <div class="HeaderLink">
+            <a href="">About</a>
+            <a href="">Contact Us</a>
+            <a href="">Game-Help</a>
+        </div>
     </div>
     <div class="GameDisplay"> 
         <div class="User">
@@ -19,25 +24,29 @@
                 Your Point
             </div>
             <div id="pointCounterYou">
-                ..
+                0
             </div>
         </div>
+        <div id="result">Ready?!</div>
         <div class="CPU">
             <div class="titlePoint">
                 CPU Point
             </div>
             <div id="pointCounterCPU">
-                ..
+                0
             </div>
         </div>
     </div>
-    <div id="displayCPUChoice">
-        Your Opp Move
+    <div class="oppMove">
+        Your Opponent picked
+        <div id="displayCPUChoice"></div>
     </div>
     <div class="choiceUser">
-        <button class="elementRPS" id="Rock" onclick="clickRock()">Rock</button>
-        <button class="elementRPS" id="Paper" onclick="clickPaper()">Paper</button>
-        <button class="elementRPS" id="Scissors" onclick="clickScissor()">Scissors</button>
+        <button id="Rock" onclick="clickRock()">Rock</button>
+        <button id="Paper" onclick="clickPaper()">Paper</button>
+        <button id="Scissors" onclick="clickScissor()">Scissors</button>
     </div>
+    <button id="reset" onclick="resetScore()">reset the score</button>
+    <div class="footer">copyright &nbsp;<span>&copy</span>&nbsp; geraldio</div>
 </body>
 </html>

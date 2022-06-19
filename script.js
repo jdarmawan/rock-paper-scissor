@@ -1,6 +1,7 @@
 let userInput, 
     pointUser=0, 
-    pointCPU=0
+    pointCPU=0,
+    gameResult="Ready?!";
 
 function clickRock(){
     userInput=0;
@@ -8,12 +9,15 @@ function clickRock(){
     if(cpuInput===1){
         //lose
         pointCPU++
+        gameResult= "LOSE";
     }
     else if(cpuInput===2){
         //win
         pointUser++
+        gameResult= "WIN";
     }
     else{
+        gameResult= "TIE";
         return
     }
     updateDisplay()
@@ -25,13 +29,16 @@ function clickPaper(){
     const cpuInput= randomize();
     if(cpuInput===0){
         //win
-        pointUser++
+        pointUser++;
+        gameResult= "WIN";
     }
     else if(cpuInput===2){
         //lose
         pointCPU++
+        gameResult= "LOSE";
     }
     else{
+        gameResult= "TIE";
         return
     }
     updateDisplay()
@@ -44,12 +51,15 @@ function clickScissor(){
     if(cpuInput===0){
         //lose
         pointCPU++
+        gameResult= "LOSE";
     }
     else if(cpuInput===1){
         //win
         pointUser++
+        gameResult= "WIN";
     }
     else{
+        gameResult= "TIE";
         return
     }
     updateDisplay()
@@ -60,23 +70,26 @@ function randomize(){
     //cpuNumber, 0=Rock, 1=Paper, 2=Scissors
     let numCPU= Math.floor(Math.random() * 3);
     if(numCPU==0){
-        document.getElementById("displayCPUChoice").innerHTML = "Your Opponent Picked Rock"
+        document.getElementById("displayCPUChoice").innerHTML = "Rock"
     }
     else if(numCPU==1){
-        document.getElementById("displayCPUChoice").innerHTML = "Your Opponent Picked Paper"
+        document.getElementById("displayCPUChoice").innerHTML = "Paper"
     }
     else{
-        document.getElementById("displayCPUChoice").innerHTML = "Your Opponent Picked Scissor"
+        document.getElementById("displayCPUChoice").innerHTML = "Scissor"
     }
     return numCPU ;
 }
 
 function updateDisplay(){
     document.getElementById("pointCounterYou").innerHTML = pointUser;
-    document.getElementById("pointCounterCPU").innerHTML = pointCPU
+    document.getElementById("pointCounterCPU").innerHTML = pointCPU;
+    document.getElementById("result").innerHTML=gameResult
 }
 
-function gameLogic(){
-    const cpuInput= randomize;
-
+function resetScore(){
+    pointCPU=0;
+    pointUser=0;
+    updateDisplay();
+    return
 }
