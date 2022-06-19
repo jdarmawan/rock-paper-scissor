@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="header"> 
+        <div class="Title"> Rock-Paper-Scissor </div> 
+    </div>
+    <div class="GameDisplay"> 
+        <div class="User">
+            <div class="titlePoint">
+                Your Point
+            </div>
+            <div id="pointCounterYou">
+                ..
+            </div>
+        </div>
+        <div class="CPU">
+            <div class="titlePoint">
+                CPU Point
+            </div>
+            <div id="pointCounterCPU">
+                ..
+            </div>
+        </div>
+    </div>
+    <div id="displayCPUChoice">
+        Your Opp Move
+    </div>
+    <div class="choiceUser">
+        <button class="elementRPS" id="Rock" onclick="clickRock()">Rock</button>
+        <button class="elementRPS" id="Paper" onclick="clickPaper()">Paper</button>
+        <button class="elementRPS" id="Scissors" onclick="clickScissor()">Scissors</button>
+    </div>
+</body>
+</html>

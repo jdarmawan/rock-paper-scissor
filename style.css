@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #95afba;
+    color: #fafafa;
+    flex:auto;
+    margin: 0;
+}
+
+body .header{
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0;
+    background-color:#3f7cac;
+    justify-content: space-between;
+}
+
+.User, .CPU{
+    padding: 30px;
+}
+
+.GameDisplay{
+    display: flex;
+    font-size: 30px;
+}
+
+.pointCounter{
+    margin-top: 20px;
+}
+.display{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.choiceUser{
+    display: flex;
+}
+
+#displayCPUChoice{
+    font-size: 30px;
+}
+
+button{
+    width: auto;
+    height: 80px;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    color: rgb(34, 140, 182);
+    margin: 0 30px;
+    font-size: 40px;
+    border-radius: 13px;
+}
+
+button:hover{
+    background-color: rgb(34, 140, 182);
+    color: #fafafa;
+}
