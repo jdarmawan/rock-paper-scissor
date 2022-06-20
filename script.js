@@ -18,7 +18,6 @@ function clickRock(){
     }
     else{
         gameResult= "TIE";
-        return
     }
     updateDisplay()
     return 
@@ -39,7 +38,6 @@ function clickPaper(){
     }
     else{
         gameResult= "TIE";
-        return
     }
     updateDisplay()
     return 
@@ -60,7 +58,6 @@ function clickScissor(){
     }
     else{
         gameResult= "TIE";
-        return
     }
     updateDisplay()
     return 
